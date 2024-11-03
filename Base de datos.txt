@@ -1,0 +1,37 @@
+Usuarios{
+idUsuario PK
+Correo varchar(30)
+Password varchar(15)
+Nombre varchar(50)
+Institucion varchar(50)
+Rol int (2)
+}
+
+Alumnos{
+idAlumno PK
+idUsuario FK
+idGrupo FK 
+horasACumplir int(4)
+horasTotales int(4)
+}
+
+Asesores{
+idAsesor PK
+idUsuario FK
+}
+
+Horas_Registradas{
+idHora PK
+idAlumno FK
+fecha DATE
+horaEntrada TIMEDATE
+horaSalida TIMEDATE
+}
+
+Grupos{
+idGrupo PK
+idAsesor FK
+Puesto varchar(30)
+Descripcion varchar(30)
+Capacidad int(2)
+}

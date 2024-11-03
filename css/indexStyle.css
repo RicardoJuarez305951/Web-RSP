@@ -1,0 +1,101 @@
+/*
+Basic color: #4D4D4D    Grey
+Basic2 color: #969696   Light-grey 
+Title1 color: #00B2E3   Light-blue
+Title2 color: #53BFF1   Lighter-blue [Cyan-like]
+Title3 color: #004A98   Dark-blue
+*/
+
+/*General Style*/
+.banner{position: sticky; height: 70px;top: 0; z-index: 5;  background-color: #004A98; width: auto; display: flex;  justify-content: center; align-items: center}
+.banner a{border-radius: 25px;  background-color: #004A98; color: white; padding: 8px; text-align: center; font-weight: bold}
+.banner div{padding: 8px; margin: 10; ;}
+
+.tabla{margin: auto; display: flex; flex-wrap: nowrap; justify-content: space-around;}
+.tabla-img{background-color: blue; margin: auto; margin-top: 30px;}
+.tabla-cont{ border: 1px solid black; text-align: center; }
+.menu3 .content-right{display: flex; flex-direction: column;}
+.menu3{display: flex; justify-content: center;}
+.enum{float: left;}
+.content-right-txt{float: left;}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #EFF8FF;
+}
+
+@media screen and (min-width: 1025px){
+    .paginaWeb{width: 1200px; margin: 0 auto ;}
+    .menu1 {height: 600px;}
+        h1{font-size: 48px;}
+        .content1{width: 600px; margin-top: 200px;}
+        .content1 p{width: 400px;}
+        .content1 .button{margin: 15px;}
+    
+    .menu2{height: 600px;}
+    .menu2 h1{text-align: center;}
+        .tabla{width: 1000px; height: 400px;}
+        .tabla-img{width: 50px; height: 50px; } 
+        .tabla-txt{margin-top: 50px;}
+
+    .menu3{height: 600px;}
+        .menu3 .content-left{width: 650px; }
+        .menu3 .content-right{display: flex; flex-direction: column;}
+        .enum{width: 50px; margin-top: 30px;}
+        .content-right-txt{width: 400px;}
+    .paginaWeb{width: 1170px; margin: 0 auto ;}
+}
+
+@media screen and (min-width: 681px) and (max-width: 1024px){
+    .paginaWeb{width: 700; margin: 0 auto ;}
+    .banner{position: sticky; height: 50px;top: 0; z-index: 5; background-color: #004A98; width: auto; display: flex;  justify-content: center; align-items: center; font-size: 14px;}
+    .banner a{border-radius: 25px;  background-color: #004A98; color: white; padding: 4px; text-align: center; font-weight: bold}
+    .banner div{padding: 4px; margin: 10;}
+
+    .menu1{width: 100%; margin: 0 auto;}
+        .menu1 div{margin: 0 auto;}
+        .menu1 h1{text-align: center;}
+
+    .menu2 h1{text-align: center;}
+        .tabla{margin-bottom: 25px;}
+        .tabla-img{width: 50px; height: 50px; } 
+        .tabla-txt{margin-top: 30px;}
+        .tabla p{font-size: 14px;}
+        .tabla h2{font-size: 24px;}
+    
+    .menu3{}
+        .content-left{display: flex; align-items: center;
+            justify-content: center;}
+        .content-left h1{text-align: center; display: table-cell;  vertical-align: middle;}
+        .menu3 .content-right{display: flex; flex-direction: column;}
+        .enum{width: 80px; margin-top: 30px;}
+        .content-right-box{display: flex; flex-direction: row;}
+}
+
+@media screen and (min-width: 0px) and (max-width: 670px){
+    .paginaWeb{width: 80%; margin: 0 auto ;} 
+    
+    .banner{position: sticky; height: 50px;top: 0; z-index: 5;  background-color: #004A98; width: auto; display: flex;  justify-content: center; align-items: center; font-size: 8px;}
+    .banner a{border-radius: 25px;  background-color: #004A98; color: white; padding: 4px; text-align: center; font-weight: bold}
+    .banner div{padding: 4px; margin: 10; ;}
+
+    .menu1{width: 100%; margin: 0 auto;}
+        .menu1 div{margin: 0 auto;}
+        .menu1 h1{text-align: center;}
+
+    .menu2 h1{text-align: center;}
+        .tabla{margin-bottom: 25px; flex-wrap: wrap;}
+        .tabla-cont{width: 50%; border: 0; outline: 1px solid; padding: -12px; }
+        .tabla-img{width: 30px; height: 30px; } 
+        .tabla-txt{margin-top: 30px; width: 80%; margin: 0 auto;}
+        .tabla p{font-size: 14px;}
+        .tabla h2{font-size: 24px;}
+    
+    .menu3{display: flex; flex-direction: column;}
+        .content-left h1{text-align: center;}
+        .enum{width: 80px; margin-top: 30px;}
+        .content-right-box{display: flex; flex-direction: row;}
+    
+    .pie{width: 100%; padding: 0; height: 100%;}        
+}

@@ -1,0 +1,49 @@
+
+
+/*
+Basic color: #4D4D4D    Grey
+Basic2 color: #969696   Light-grey 
+Title1 color: #00B2E3   Light-blue
+Title2 color: #53BFF1   Lighter-blue [Cyan-like]
+Title3 color: #004A98   Dark-blue
+*/
+.button a{text-decoration: none; color: white;}
+#pasBut{background-color: white; color: black;}
+#regBut{background-color: black; color: white;}
+#iniBut{margin: 0 auto;}
+
+.paginaWeb{display: flex;flex-direction: column; justify-content: space-between; text-align: center;}
+.botones{display: flex; justify-content: center; }
+
+@media screen and (min-width: 1025px){
+    .paginaWeb{width: 1170px; margin: 0 auto ; text-align: center;}
+        .contenido{margin: 0 auto; width: 600px;height: 600px; margin-top: 100px;}
+        .contenido div{margin-top: 20px;}
+        .contenido input{width: 300px; height: 40px; font-size: 24px; margin-top: 20px;}
+        #pas{margin-bottom: 50px;}
+        .botones{margin-top: 50px; margin: 25px;}
+}
+
+@media screen and (min-width: 681px) and (max-width: 1024px){
+    .banner{position: sticky; height: 50px;top: 0; z-index: 5; background-color: #004A98; width: auto; display: flex;  justify-content: center; align-items: center; font-size: 14px;}
+    .banner a{border-radius: 25px;  background-color: #004A98; color: white; padding: 4px; text-align: center; font-weight: bold}
+    .banner div{padding: 4px; margin: 10;}
+    .paginaWeb{width: 700; margin: 0 auto ;}
+        .contenido{margin: 0 auto; width: 600px;height: 600px; margin-top: 100px;}
+        .contenido div{margin-top: 20px;}
+        .contenido input{width: 300px; height: 40px; font-size: 24px; margin-top: 20px;}
+        #pas{margin-bottom: 100px;}
+        .botones{margin-top: 50px; margin: 25px;}
+}
+
+@media screen and (min-width: 0px) and (max-width: 670px){
+    .banner{position: sticky; height: 50px;top: 0; z-index: 5;  background-color: #004A98; width: auto; display: flex;  justify-content: center; align-items: center; font-size: 8px;}
+    .banner a{border-radius: 25px;  background-color: #004A98; color: white; padding: 4px; text-align: center; font-weight: bold}
+    .banner div{padding: 4px; margin: 10;}
+    .paginaWeb{width: 100%; margin: 0 auto ;}
+        .contenido{margin: 0 auto; width: 80%;height: 600px; margin-top: 100px;}
+        .contenido div{margin-top: 20px;}
+        .contenido input{width: 300px; height: 40px; font-size: 24px; margin-top: 20px;}
+        #pas{margin-bottom: 100px;}
+        .botones{margin-top: 50px; margin: 25px;}
+    }

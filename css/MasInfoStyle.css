@@ -1,0 +1,33 @@
+/*
+Basic color: #4D4D4D    Grey
+Basic2 color: #969696   Light-grey 
+Title1 color: #00B2E3   Light-blue
+Title2 color: #53BFF1   Lighter-blue [Cyan-like]
+Title3 color: #004A98   Dark-blue
+*/
+
+span{color: black; font-weight: bold;}
+
+.container{display: flex; justify-content: space-around; width:auto;}
+.container-3d{ flex-grow: 1; flex-basis: 0;}
+p{text-align: left;}
+ul{text-align: left;}
+.button{margin: 0 auto; margin-bottom: 15px;}
+
+
+@media screen and (min-width: 1025px){
+    .paginaWeb{width: 1200px; margin: 0 auto; text-align: center;}
+    
+}
+
+@media screen and (min-width: 681px) and (max-width: 1024px){ 
+    .paginaWeb{width: 700; margin: 0 auto ;}
+    .container{flex-direction: column;}    
+    .pie{width: auto; height: auto;}
+}
+
+@media screen and (min-width: 0px) and (max-width: 670px){ 
+    .paginaWeb{width: 100%; margin: 0 auto ;} 
+    .container{flex-direction: column; width: 80%; margin: 0 auto;}
+    .pie{width: auto; height: auto;}
+}

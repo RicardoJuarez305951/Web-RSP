@@ -1,0 +1,43 @@
+/*
+Basic color: #4D4D4D    Grey
+Basic2 color: #969696   Light-grey 
+Title1 color: #00B2E3   Light-blue
+Title2 color: #53BFF1   Lighter-blue [Cyan-like]
+Title3 color: #004A98   Dark-blue
+*/
+
+.info-container{display: flex; flex-wrap: wrap; margin: 0 auto;}
+.box{display: flex; flex-wrap: nowrap; align-items: center; justify-content: space-around; }
+.content{display:flex; flex-direction: column; justify-content: flex-start;}
+.text{float: left;text-align: left;}
+
+@media screen and (min-width: 1025px){
+    .paginaWeb{width: 1200px; margin: 0 auto; text-align: center;}
+        .info-container{width: 1200px;}
+        .box{width: 580px;  margin: 8px;}
+        .enum{margin-bottom: 80px; font-size: 34px;} 
+        .text{margin-right: 180px;}
+        
+}
+
+@media screen and (min-width: 681px) and (max-width: 1024px){
+    .banner{font-size: 14px;}
+    .paginaWeb{width: 700; margin: 0 auto ;}
+        .paginaWeb h1{text-align: center;}
+        .info-container{width: 80%;}
+        .box{width: 600px;  margin: 8px;}
+        .enum{margin-bottom: 80px; font-size: 34px;} 
+        .text{margin-right: 180px;}
+}
+
+@media screen and (min-width: 0px) and (max-width: 670px){ 
+    body{font-size: 14px;}
+    .banner{font-size: 8px;}
+    .paginaWeb{width: 100%; margin: 0 auto ;}
+        .paginaWeb h1{text-align: center;}
+        .info-container{width: 80%;}
+        .box{width: 600px;  margin: 8px;}
+        .enum{margin-bottom: 80px; font-size: 34px;} 
+        .text{margin-right: 180px;}
+    .pie{width: auto; height: auto;}
+}
